@@ -1,0 +1,53 @@
+/* Estilos generales para el componente ItemCount */
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el botón "Agregar al Carrito" */
+  div button {
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  div button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  div button:hover {
+    background-color: black;
+    color: white;
+  }
+  

@@ -1,0 +1,43 @@
+/* Estilos generales para el componente ItemList */
+.item-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para los elementos individuales (cada artículo) */
+  .animes {
+    flex: 0 0 calc(30% - 20px); /* 3 elementos en una fila en pantallas medianas y grandes */
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    transition: all 1.3s;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .animes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .animes img {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .animes p {
+    margin: 10px 0;
+  }
+
+
+  /* Media queries para pantallas medianas y grandes */
+  @media (max-width: 768px) {
+    .animes {
+      flex: 0 0 calc(45% - 20px); /* 2 elementos en una fila en pantallas medianas y grandes */
+    }
+  }
+  

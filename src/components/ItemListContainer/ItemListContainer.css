@@ -1,0 +1,58 @@
+/* Estilos generales para el componente ItemListContainer */
+.item-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* Estilos para el título */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de la lista de elementos (ItemList) */
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para cada elemento individual (cada artículo) en la lista */
+.animes {
+    flex: 0 0 calc(30% - 20px);
+    /* 3 elementos en una fila en pantallas medianas y grandes */
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #333;
+}
+
+.animes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.animes img {
+    max-width: 100%;
+}
+
+.animes p {
+    margin: 10px 0;
+}
+
+/* Media queries para pantallas medianas y grandes */
+@media (max-width: 768px) {
+    .animes {
+        flex: 0 0 calc(45% - 20px);
+        /* 2 elementos en una fila en pantallas medianas y grandes */
+    }
+}
